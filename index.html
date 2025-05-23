@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocal Enhancer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Vocal Enhancer</h1>
+
+        <div class="upload-section">
+            <label for="audioUpload">Upload your audio file:</label>
+            <input type="file" id="audioUpload" accept="audio/*">
+            <button id="enhanceButton">Enhance Vocals</button>
+        </div>
+
+        <div class="audio-players">
+            <div class="player-section">
+                <h2>Original Audio</h2>
+                <audio id="originalPlayer" controls></audio>
+            </div>
+            <div class="player-section">
+                <h2>Enhanced Audio</h2>
+                <audio id="enhancedPlayer" controls></audio>
+            </div>
+        </div>
+
+        <div class="download-section">
+            <button id="downloadButton">Download Enhanced Audio</button>
+        </div>
+    </div>
+    <script src="script.js"></script> </body>
+</html>
